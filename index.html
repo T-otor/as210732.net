@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="AS213045 - Educational & Research Network Operated By A Belgian Student.">
+    <meta name="author" content="Alex DELPORTE">
+    <link rel="icon" href="assets/favicon.ico">
+
+    <title>AS210732 • ECOWAN NETWORK</title>
+
+    <!-- Font-Awesome CSS -->
+    <script src="https://kit.fontawesome.com/249b603db9.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Flag-icon CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" rel="stylesheet"/>
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/starter-template.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">AS210732</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Accueil</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-circle-info"></i> Informations</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <h6 class="dropdown-header">Infrastrcture réseau</h6>
+              <a class="dropdown-item " href="prefix.html"><i class="fa-solid fa-database"></i> Prefix</a>
+              <a class="dropdown-item " href="ixp.html"><i class="fa-solid fa-location-dot"></i> IXPs</a>
+              <a class="dropdown-item " href="pop.html"><i class="fa-solid fa-globe"></i> PoPs</a>
+              <a class="dropdown-item " href="peers.html"><i class="fa-solid fa-satellite"></i> Peers & Upstreams</a>
+              <a class="dropdown-item " href="peering.html"><i class="fa-solid fa-handshake"></i> Policy</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-handshake-angle"></i> Services</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown02">
+              <h6 class="dropdown-header">Services Gratuit</h6>
+              <a class="dropdown-item" data-toggle="modal" data-target="#orderModal"><i class="fa-solid fa-cloud"></i> Transit <span class="badge bg-primary">IPv6</span></a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#orderModal"><i class="fa-solid fa-address-card"></i> Prefix <span class="badge bg-primary">IPv6</span></a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#orderModal"><i class="fa-solid fa-archway"></i> Routage <span class="badge bg-primary">IPv6</span></a>
+              <h6 class="dropdown-header">Paid Services</h6>
+              <a class="dropdown-item" data-toggle="modal" data-target="#orderModal"><i class="fa-solid fa-cloud"></i> Transit <span class="badge bg-secondary">IPv4</span></a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#orderModal"><i class="fa-solid fa-archway"></i> Routage <span class="badge bg-secondary">IPv4</span></a>
+            </div>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-wrench"></i> Outils</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown03">
+              <h6 class="dropdown-header">Notre réseau</h6>
+              <a class="dropdown-item " href="https://weathermap.ecowan.network"><i class="fa-solid fa-map"></i> WeatherMap</a>
+              <a class="dropdown-item " href="bgpcommunities.html"><i class="fa-solid fa-comment-dots"></i> BGP Communities</a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header">Self-Hosted Tools</h6>
+              <a class="dropdown-item" href="https://lg.as213045.net/"><i class="fa-solid fa-binoculars"></i> Looking Glass <span class="badge bg-secondary">IPv4</span> <span class="badge bg-primary">IPv6</span></a>
+              <a class="dropdown-item" href="https://speed.as213045.net/"><i class="fa-solid fa-gauge-simple-high"></i> SpeedTest <span class="badge bg-primary" style="margin-left: 5px">IPv6</span></a>
+              <a class="dropdown-item" href="https://dns.as213045.net/"><i class="fa-solid fa-globe"></i> Free DNS <span class="badge bg-secondary">IPv4</span> <span class="badge bg-primary" style="margin-left: 5px">IPv6</span></a>
+              <a class="dropdown-item" href="https://git.as213045.net/"><i class="fa-brands fa-gitlab"></i> GitLab <span class="badge bg-secondary">IPv4</span> <span class="badge bg-primary" style="margin-left: 5px">IPv6</span></a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header">External Tools</h6>
+              <a class="dropdown-item" href="https://www.peeringdb.com/asn/213045"><i class="fa-solid fa-diagram-project"></i> PeeringDB</a>
+              <a class="dropdown-item" href="https://bgp.he.net/AS213045"><i class="fa-solid fa-network-wired"></i> BGP.HE.NET</a>
+              <a class="dropdown-item" href="https://atlas.ripe.net/probes/1004506/"><i class="fa-solid fa-chart-simple"></i> RIPE Atlas Probe</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://discord.gg/D7xm3Nq22c"><i class="fa-brands fa-discord"></i> Discord</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Pour commander un service, merci de nous contacter via :</p>
+                    <p><i class="fa-solid fa-at"></i> <a href="mailto:noc@as213045.net">noc@as210732.net</a><br>
+                       <i class="fa-brands fa-website"></i> <a href="https://clients.ecowan.fr">Notre espace client</a><br>
+                       <i class="fa-brands fa-discord"></i> <a href="https://discord.gg/uTVySwC2yU">Notre serveur discord</a></p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <main role="main" class="container">
+
+      <div class="starter-template">
+        <h1>AS213045</h1>
+        <p class="lead">Educational Network Operated By A <i class="flag-icon flag-icon-be"></i> Student.</p>
+        <p>Operated since <code>June 2020</code>.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p>We are a small IPv6 only network.<br>
+             Mainly created to learn how to use network protocols, we are happy to help beginners in this field.<br>
+             We are also committed to providing free IPv6 compatible services.<br>
+             <b>Want to join us?</b> Look below!</p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <h2 class="mt-5">What's new</h2>
+          <li><strong>18.07.22</strong> A GitLab Instance is now available. You can request access by reaching out to us.</li>
+          <li><strong>17.07.22</strong> Free DNS Services now available. Currently 2 nameservers (looking for sponsor for new one).</li>
+          <li><strong>15.07.22</strong> New RIPE Atlas Probe hosted in Munich.</li>
+          <li><strong>29.03.22</strong> LocIX FRA port is up and running.</li>
+          <li><strong>24.03.22</strong> Now on FogIXP. LocIX FRA Port ordered, waiting delivery.</li>
+          <li><strong>05.01.22</strong> New Router (FRA2-DE) Upstream: HNG (AS135395).</li>
+          <li><strong>03.01.22</strong> New Route-Reflector Router (JENA1-DE).</li>
+          <li><strong>31.12.21</strong> New website design.</li>
+        </div>
+        <div class="col-lg-6 text-center">
+          <h2 class="mt-5">What's next</h2>
+          <li>Hosting a GitLab instance</li>
+          <li>Applying automatic IRRDB filtering to downstreams</li>
+          <li>Hosting a RPKI Cache Server (software to be defined)</li>
+          <li>Applying RPKI Validation to downstreams</li>
+          <li>New Upstreams / IXP (looking for providers)</li>
+        </div>
+        <div class="col-lg-6 text-center">
+          <h2 class="mt-5">Want to help ?</h2>
+          <p>Since this is a non-profit network, We're seeking for all the help we can get.</p>
+          <p>If you have the resources or the willingness to help us improve our network, you can email us through the NOC email address.</p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <h2 class="mt-5">Contact</h2>
+          <p>Peering request & NOC: <a href="mailto:noc@as213045.net">noc[at]as213045[dot]net</a><br>
+             Abuse: <a href="mailto:abuse@as213045.net">abuse[at]as213045[dot]net</a><br>
+             <i class="fa-brands fa-telegram"></i> <a href="https://t.me/Alex19BE">@Alex19BE</a><br>
+             <i class="fa-brands fa-discord"></i> <code>Ded3l#5658</code></p>
+        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.html"><\/script>')</script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+
+<!-- Mirrored from as213045.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Aug 2022 08:50:58 GMT -->
+</html> 
